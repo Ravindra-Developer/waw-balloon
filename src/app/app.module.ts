@@ -21,7 +21,7 @@ import { OtherEventsComponent } from './other-events/other-events.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { TermsConditionComponent } from './terms-condition/terms-condition.component';
 import { HttpClientModule } from '@angular/common/http';
-import { CommonModule } from '@angular/common';
+import { CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { ToastModule } from 'primeng/toast';
 
 @NgModule({
@@ -53,7 +53,7 @@ import { ToastModule } from 'primeng/toast';
     HttpClientModule,
     ToastModule
   ],
-  providers: [],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
