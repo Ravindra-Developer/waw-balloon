@@ -1,0 +1,154 @@
+.birthday__decorations {
+    .dash {
+        margin-bottom: 2rem;
+        width: 30%;
+    }
+
+    img {
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .img-2 {
+        display: none;
+    }
+
+    .button {
+        width: 200px;
+
+        .fa-whatsapp {
+            font-size: 22px;
+        }
+    }
+}
+
+.sm__banner {
+    background-image: url('../../assets/images/bg__party_theme.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .heading {
+        color: #fff;
+    }
+
+    .dash {
+        margin-bottom: 1rem;
+        width: 30%;
+    }
+
+    .button {
+        color: #fff !important;
+    }
+
+    .button::before,
+    .button::after {
+        background-color: #fff;
+    }
+
+    .button:hover {
+        color: #ff5f6a !important;
+    }
+}
+
+.testimonials {
+    .card {
+        height: 350px;
+
+        img {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 50%;
+        }
+
+        .fa-quote-left,
+        .fa-quote-right {
+            font-size: 20px;
+        }
+
+        .fa-star {
+            color: #FFD700;
+        }
+    }
+}
+
+
+
+
+@media (min-width: 100px) and (max-width: 575px) {
+    .img-1 {
+        display: none;
+    }
+
+    .img-2 {
+        display: block !important;
+        // height: 300px !important;
+        margin-bottom: 2rem !important;
+    }
+
+    p {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .btn-parent {
+        display: flex;
+        justify-content: space-between;
+
+        .button {
+            width: 180px;
+            padding: 10px 5px;
+            margin: 0 !important;
+        }
+    }
+}
+
+@media (max-width: 410px) {
+    .btn-parent {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .button {
+            width: 100% !important;
+            padding: 10px 5px;
+            margin-bottom: 1rem !important;
+        }
+    }
+}
+ 
+@media (min-width: 576px) and (max-width: 767px) {
+    .img-1 {
+        display: none;
+    }
+
+    .img-2 {
+        display: block !important;
+        height: 500px !important;
+        margin-bottom: 2rem !important;
+    }
+
+    p {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .img-1 {
+        display: none;
+    }
+
+    .img-2 {
+        display: block !important;
+        height: 600px !important;
+        margin-bottom: 2rem !important;
+    }
+
+    p {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}

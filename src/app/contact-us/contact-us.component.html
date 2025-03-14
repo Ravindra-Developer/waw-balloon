@@ -1,0 +1,156 @@
+<section class="bread__crumb">
+  <div class="container h-100">
+    <div class="row h-100">
+      <div class="col-12 my-auto">
+        <h2 class="title">Home / Contact us</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block contact__us">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="heading">Let's Chat</h1>
+        <h2 class="title">Tell me about your occasion</h2>
+        <p class="text-muted">contact us and one of our delightful team will be be happy to help.</p>
+        <div class="dash"><i class="fas fa-gift"></i></div>
+      </div>
+      <div class="col-12 col-lg-12 ">
+        <div class="card my-4">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-3 text-center my-auto">
+                <img loading="lazy"src="assets/icons/call.png" width="50" alt="call icon contact us vector image" class="img-fluid">
+              </div>
+              <div class="col-9">
+                <h1 class="heading">Have Questions? Call us</h1>
+                <h2 class="title">+91 70214 24278</h2>
+                <!-- <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-4">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-3 text-center my-auto">
+                <img loading="lazy"src="assets/icons/mail.png" width="50" alt="messege icon contact us vector image"
+                  class="img-fluid">
+              </div>
+              <div class="col-9">
+                <h1 class="heading">Email Adddress</h1>
+                <h2 class="title">wawballoonsdecoration@gmail.com</h2>
+                <!-- <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-12 col-lg-6 offset-lg-1">
+        <form [formGroup]="contactusForm">
+          <div class="row">
+            <div class="col-12 col-sm-6 mb-3">
+              <div class="form__group field">
+                <input type="input" class="form__field" placeholder="First Name" formControlName="first_name">
+                <label for="First_name" class="form__label">First Name</label>
+              </div>
+              <div class="mb-2"
+                *ngIf="contactusForm.controls['first_name'].hasError('required') && contactusForm.controls['first_name'].touched">
+                <small class="fs-12 text-danger text-start">*Please Enter Your
+                  First Name
+                </small>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 mb-3">
+              <div class="form__group field">
+                <input type="input" class="form__field" placeholder="Last Name" formControlName="last_name">
+                <label for="Last_name" class="form__label">Last Name</label>
+              </div>
+              <div class="mb-2"
+                *ngIf="contactusForm.controls['last_name'].hasError('required') && contactusForm.controls['last_name'].touched">
+                <small class="fs-12 text-danger text-start">*Please Enter Your Last Name
+                </small>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 mb-3">
+              <div class="form__group field">
+                <input type="tel" class="form__field" placeholder="Phone" maxLength="10" minlength="10"
+                  (input)="onMobileNoInput($event)" formControlName="mobile_no">
+                <label for="Phone" class="form__label">Phone</label>
+              </div>
+              <div class="mb-2"
+                *ngIf="contactusForm.controls['mobile_no'].hasError('required') && contactusForm.controls['mobile_no'].touched">
+                <small class="fs-12 text-danger text-start">*Please Enter Your
+                  Phone Number
+                </small>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 mb-3">
+              <div class="form__group field">
+                <input type="email" class="form__field" placeholder="Phone" formControlName="email">
+                <label for="Phone" class="form__label">Email</label>
+              </div>
+              <div class="mb-2"
+                *ngIf="contactusForm.controls['email'].hasError('required') && contactusForm.controls['email'].touched">
+                <small class="text-danger text-start fs-12">*Please Enter Your
+                  Email</small>
+              </div>
+              <div class="mb-2"
+                *ngIf="contactusForm.controls['email'].hasError('pattern') && (contactusForm.controls['email'].touched || contactusForm.controls['email'].dirty)">
+                <small class="text-danger text-start fs-12">*Please Enter Valid Email
+                </small>
+              </div>
+            </div>
+            <div class="col-12 mb-2">
+              <div class="form__group field">
+                <textarea class="form__field" placeholder="Messege" rows="4" formControlName="messege"></textarea>
+                <label for="Phone" class="form__label">Messege</label>
+              </div>
+              <div class="mb-2"
+                *ngIf="contactusForm.controls['messege'].hasError('required') && contactusForm.controls['messege'].touched">
+                <small class="fs-12 text-danger text-start">*Please Enter Your
+                  Messege
+                </small>
+              </div>
+            </div>
+            <div class="col-12 mb-5">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" [(ngModel)]="check"
+                  [ngModelOptions]="{standalone: true}" id="agree__terms">
+                <label class="form-check-label text-muted" for="agree__terms">
+                  I agree that my submitted data is being collected and stored.
+                </label>
+              </div>
+              <div class="mb-2" *ngIf="!check">
+              </div>
+            </div>
+            <div class="col-12 text-center">
+              <button class="btn btn-primary button w-50" [disabled]="contactusForm.invalid || !check"
+                (click)="submitContactUs()">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div> -->
+    </div>
+  </div>
+</section>
+
+<section class="block map__embd border-top">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="heading">Where we are?</h1>
+        <!-- <h2 class="title">Add: Lorem ipsum dolor sit amet.</h2> -->
+        <div class="dash"><i class="fas fa-gift"></i></div>
+      </div>
+      <div class="col-12 p-0">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.584930296743!2d72.83003947520665!3d19.125856582089014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b75d55bf42f9%3A0xcc5d665caa25a0ca!2sWaw%20Balloons%20Decoration!5e0!3m2!1sen!2sin!4v1704448998890!5m2!1sen!2sin"
+          width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>

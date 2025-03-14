@@ -1,0 +1,95 @@
+footer {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+    .container-lg {
+        .nav-span {
+            line-height: 40px;
+            padding: 0 4px;
+            font-size: 20px;
+        }
+
+        .nav-item {
+            .nav-link {
+                font-family: 'Figtree', sans-serif;
+                color: #9d9c9b;
+                font-size: 18px;
+                font-weight: 700;
+                // padding: 0;
+                padding: 8px 15px;
+            }
+        }
+
+        .active {
+            border-bottom: 3px solid #ff5f6a;
+
+            a {
+                color: #ff5f6a !important;
+            }
+        }
+
+        .main-card {
+            margin-top: -75px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+
+        .card {
+            &:hover>.icon {
+                background: #ff5f6a;
+            }
+
+            .icon {
+                margin: auto;
+                margin-top: -50px;
+                width: 60px;
+                height: 60px;
+                background: #000;
+                color: #fff;
+                line-height: 60px;
+                font-size: 26px;
+            }
+        }
+    }
+
+    .container-fluid {
+        span {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+        }
+    }
+}
+
+@media (min-width:100px) and (max-width:575px) {
+    footer {
+        margin-bottom: 54px;
+    }
+
+    footer .container-lg .card .icon {
+        margin-top: 0;
+    }
+
+    .main-card .card {
+        margin-bottom: 1rem;
+        border: none !important;
+        border-bottom: 1px solid #dee2e6 !important;
+        padding-top: 1rem;
+    }
+
+    // .card:nth-last-child(1) {
+    //     border: none !important;
+    //   } 
+
+    footer .container-lg .main-card {
+        margin-top: 1rem;
+        box-shadow: none !important;
+        border: none;
+    }
+
+    .nav-span {
+        display: none;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {}
+
+@media (min-width:768px) and (max-width:992px) {}

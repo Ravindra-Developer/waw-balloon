@@ -1,0 +1,114 @@
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-logo {
+    z-index: 99;
+
+    img {}
+}
+
+.navbar-expand-md {
+    z-index: 99;
+    background-color: #fff !important;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+    .nav-span {
+        line-height: 40px;
+        padding: 0 4px;
+        font-size: 20px;
+    }
+
+    .active {
+        border-bottom: 3px solid #ff5f6a;
+
+        a {
+            color: #ff5f6a !important;
+        }
+    }
+
+    .nav-item {
+        .nav-link {
+            font-family: 'Montserrat', sans-serif;
+            color: #9d9c9b;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            // padding: 0;
+            padding: 8px 15px;
+
+            &:hover {
+                color: #ff5f6a !important;
+            }
+        }
+    }
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+@media (min-width:100px) and (max-width:575px) {
+    .navbar-toggler {
+        background-color: #fff;
+        border-radius: 0;
+        border: none;
+        margin-left: auto !important;
+        padding: 15px 25px;
+    }
+
+    .navbar-toggler-icon {
+        background-repeat: no-repeat;
+        background-size: unset;
+        height: 1.8em;
+    }
+
+    .navbar-expand-md {
+        text-align: center;
+    }
+
+    .nav-span {
+        display: none;
+    }
+
+    .nav-item {
+        margin-bottom: 0.5rem;
+    }
+
+    .navbar-brand {
+        margin-right: auto !important;
+        margin-left: 0 !important;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .navbar-toggler {
+        background-color: #fff;
+        border-radius: 0;
+        border: none;
+        margin-left: auto !important;
+    }
+
+    .navbar-expand-md {
+        text-align: center;
+    }
+
+    .nav-span {
+        display: none;
+    }
+
+    .nav-item {
+        margin-bottom: 0.5rem;
+    }
+
+    .navbar-brand {
+        margin-right: auto !important;
+        margin-left: 0 !important;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {}

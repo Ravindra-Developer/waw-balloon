@@ -1,0 +1,48 @@
+<div class="head__er" *ngIf="pageNotFound()">
+    <app-header></app-header>
+</div>
+
+<div [ngClass]="pageNotFound()?'main-page':' '">
+    <router-outlet></router-outlet>
+    <div class="social" *ngIf="pageNotFound()">
+        <div class="insta icons">
+            <a href="https://www.instagram.com/wawballoondecoration/" target="_blank"> <i
+                    class="fab fa-instagram"></i></a>
+        </div>
+        <div class="whatsapp icons">
+            <a href="https://wa.me/917021424278" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div class="facebook icons">
+            <a href="https://www.facebook.com/profile.php?id=100065515480421&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </div>
+    </div>
+
+    <div class="scroll-top" *ngIf="pageNotFound()">
+        <div class="insta icons" (click)="scrollTop()">
+            <a href="javascript:void(0)"> <i class="fas fa-chevron-up"></i></a>
+        </div>
+    </div>
+    
+    <div class="call_to_action" *ngIf="pageNotFound()">
+        <div class="insta icons">
+            <a href="tel:+917021424278"> <i class="fas fa-phone-alt"></i></a>
+        </div>
+    </div>
+
+    <div class="row main__row_sm">
+        <div class="col-6 p-0">
+            <div class="sm__whatsapp">
+                <a href="https://wa.me/917021424278" target="_blank"><i class="fab fa-whatsapp me-2"></i>Whatsapp</a>
+            </div>
+        </div>
+        <div class="col-6 p-0">
+            <div class="sm__call">
+                <a href="tel:+917021424278"><i class="fas fa-phone-alt me-2"></i>Call Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="foot__er" *ngIf="pageNotFound()">
+    <app-footer></app-footer>
+</div>

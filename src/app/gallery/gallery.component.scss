@@ -1,0 +1,33 @@
+.gallery {
+    .img__box {
+        height: 500px;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 1.5rem;
+
+
+
+        &:hover>img {
+            // border-left: 4px solid #ff5f6a;
+            // border-top: 3px solid #ff5f6a;
+            transform: scale(1.1);
+            transition: 0.4s ease;
+            transition: 1.2s cubic-bezier(.17, .85, .438, .99);
+        }
+ 
+        img {
+            width: 100%;
+            height: 500px;
+            // object-fit: cover;
+            transition: 0.4s ease;
+            transform: scale(1.0);
+        }  
+
+    }
+
+    .Corporate_box {
+        height: 350px !important;
+    }
+}
+ 
+ 

@@ -1,0 +1,103 @@
+<section class="bread__crumb">
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-12 my-auto">
+                <h5 class="title">Home / Services / Other Events</h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="block birthday__decorations">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-5 col-xl-5 my-auto">
+                <img loading="lazy"src="assets/images/bride_to_be_others_services.jpg" alt="other event vector image from gallery" class="img-fluid img-1">
+            </div>
+            <div class="col-12 col-lg-7 col-xl-7 text-center">
+                <h1 class="heading">Other Event Service</h1>
+                <h2 class="title">Versatile decorations for any occasion, making every event extraordinary.</h2>
+                <div class="dash"><i class="fas fa-gift"></i></div>
+                
+                <img loading="lazy"src="assets/images/bride_to_be_others_services.jpg" alt="other event vector image from gallery" class="img-fluid img-2">
+                <p class="text-muted text-start mx-3">
+                    Versatility meets creativity with our Other Events service! Whether you're planning a corporate event, a family reunion, or any special gathering, <b>Waw Balloon Decoration</b> has you covered. Our decorators specialize in creating versatile and stylish setups tailored to suit a variety of occasions. Explore the possibilities and let us add a touch of uniqueness to your event. With our Other Events service, every occasion becomes extraordinary.
+                </p>
+                <p class="text-muted fw-semibold text-start m-0 mx-3 ">
+                    Discover our wide range of services that may include the following points:
+                </p>
+                <ul>
+                    <li><p class="text-muted text-start m-0">Welcome Baby</p></li>
+                    <li><p class="text-muted text-start m-0">Annual Functions</p></li>
+                    <li><p class="text-muted text-start m-0">Party Decor</p></li>
+                    <li><p class="text-muted text-start m-0">Room Decor</p></li>
+                    <li><p class="text-muted text-start m-0">Graduation Parties</p></li>
+                    <li><p class="text-muted text-start m-0">Themed Events</p></li>
+                    <li><p class="text-muted text-start m-0">Surprise Parties</p></li>
+                    <li><p class="text-muted text-start m-0">Cultural and Religious Celebrations</p></li>
+                    <li><p class="text-muted text-start m-0">Corporate Events</p></li>
+                    <li><p class="text-muted text-start m-0">Outdoor Celebrations</p></li>
+                    <li><p class="text-muted text-start m-0">And Many More...</p></li> 
+                </ul>
+                 
+                 
+                <div class="col-12 btn-parent mt-4 text-start">
+                    <a class="button btn btn-primary mx-3" target="_blank" href="tel:+917021424278"><i class="fas fa-phone-alt me-2"></i> Get
+                        best price</a>
+
+                    <a class="button btn btn-primary mx-3" target="_blank" href="https://wa.me/917021424278"> <i
+                            class="fab fa-whatsapp me-2"></i> Get Quotes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="block sm__banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-8 col-lg-6 text-center">
+                <h1 class="heading">See our best event gallery!</h1>
+                <!-- <h2 class="title">Lorem ipsum dolor sit amet.</h2> -->
+                <div class="dash"><i class="fas fa-gift"></i></div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-6 my-auto text-end">
+                <button class="btn btn-primary button" (click)="navigateTo('gallery')">View Gallery</button>
+            </div>
+        </div>
+    </div>
+</section>
+ 
+<section class="block testimonials">
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="heading">Testimonials</h1>
+                <h2 class="title">What client says about us!</h2>
+                <div class="dash"><i class="fas fa-gift"></i></div>
+            </div>
+            <div class="col-12">
+                <p-carousel [value]="global.reviews" [numVisible]="3" [numScroll]="1" [circular]="true"
+                    [responsiveOptions]="global.responsiveOptions" [autoplayInterval]="3000">
+                    <ng-template let-reviews pTemplate="item">
+                        <div class="card rounded-0 mx-3">
+                            <div class="card-header bg-white border-bottom-0 text-center p-3 pb-0">
+                                <img loading="lazy"[src]="reviews.img" width="65px" alt="testimonials profile image" class="img-fluid">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="title mb-3">{{reviews.name}}</h5>
+                                <p class="text-muted">
+                                    <i class="fas fa-quote-left me-2 icon"></i>{{reviews.message}}<i
+                                        class="fas fa-quote-right icon ms-2"></i>
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-top-0 text-center p-3 pt-0">
+                                <p-rating [(ngModel)]="reviews.review" [readonly]="true" [cancel]="false"></p-rating>
+                            </div>
+                        </div>
+                    </ng-template>
+                </p-carousel>
+            </div>
+        </div>
+    </div>
+</section>

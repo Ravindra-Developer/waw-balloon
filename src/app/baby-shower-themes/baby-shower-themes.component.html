@@ -1,0 +1,105 @@
+<section class="bread__crumb">
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-12 my-auto">
+                <h5 class="title">Home / Services / Baby Shower Themes</h5>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="block birthday__decorations">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-5 col-xl-5 my-auto">
+                <img loading="lazy"src="assets/images/baby_shower_services.jpg"
+                    alt="baby shower theme service image from gallery" class="img-fluid img-1">
+            </div>
+            <div class="col-12 col-lg-7 col-xl-7 text-center">
+                <h1 class="heading">Baby Shower Themes Service</h1>
+                <h2 class="title">Adorable themes for cherished baby showers and heartwarming moments.</h2>
+                <div class="dash"><i class="fas fa-gift"></i></div>
+                <img loading="lazy"src="assets/images/baby_shower_services.jpg"
+                    alt="baby shower theme service image from gallery" class="img-fluid img-2">
+                <p class="text-muted text-start mx-3">
+                    Embrace the joy of new beginnings with our Baby Shower Themes service! At <b>Waw Balloon
+                        Decoration</b>, we
+                    believe in making every baby shower a magical and heartwarming experience. Dive into a world of
+                    adorable themes, thoughtful decorations, and personalized setups designed to celebrate the arrival
+                    of your little one. Let us turn your baby shower into a memorable and charming event that reflects
+                    the uniqueness of your journey into parenthood.
+                </p>
+                <p class="text-muted text-start mx-3">
+                    <b>🎉 Free Delivery!</b> <br> Enhance your celebration with stress-free decorations. Our commitment
+                    to you includes <b>free delivery</b> of our professional decorator to your chosen location and time
+                    slot. Let us bring the magic to your doorstep and transform your space into a festive wonderland.
+                    Because extraordinary celebrations start with hassle-free preparations.
+                </p>
+                <p class="text-muted text-start mx-3">
+                    <b>🎈 Balloon Pasting Made Easy!</b> <br>Introducing our specialized <b>Masking Tape for Balloon
+                        Pasting -</b> the perfect solution to bring your balloon decorations to life without worrying
+                    about damaging your wall paint. Our masking tape ensures a secure hold for balloons while keeping
+                    your walls pristine. Transform your space with confidence and creativity, leaving no trace behind.
+                    Elevate your decorations with ease!
+                </p>
+                <div class="col-12 btn-parent mt-4 text-start">
+                    <a class="button btn btn-primary mx-3" href="tel:+917021424278"><i
+                            class="fas fa-phone-alt me-2"></i> Get
+                        best price</a>
+
+                    <a class="button btn btn-primary mx-3" target="_blank" href="https://wa.me/917021424278"> <i
+                            class="fab fa-whatsapp me-2"></i> Get Quotes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="block sm__banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-8 col-lg-6 text-center">
+                <h1 class="heading">See our best event gallery!</h1>
+                <!-- <h2 class="title">Lorem ipsum dolor sit amet.</h2> -->
+                <div class="dash"><i class="fas fa-gift"></i></div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-6 my-auto text-end">
+                <button class="btn btn-primary button" (click)="navigateTo('gallery')">View Gallery</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="block testimonials">
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="heading">Testimonials</h1>
+                <h2 class="title">What client says about us!</h2>
+                <div class="dash"><i class="fas fa-gift"></i></div>
+            </div>
+            <div class="col-12">
+                <p-carousel [value]="global.reviews" [numVisible]="3" [numScroll]="1" [circular]="true"
+                    [responsiveOptions]="global.responsiveOptions" [autoplayInterval]="3000">
+                    <ng-template let-reviews pTemplate="item">
+                        <div class="card rounded-0 mx-3">
+                            <div class="card-header bg-white border-bottom-0 text-center p-3 pb-0">
+                                <img loading="lazy"[src]="reviews.img" width="65px" alt="testimonials profile vector"
+                                    class="img-fluid">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="title mb-3">{{reviews.name}}</h5>
+                                <p class="text-muted">
+                                    <i class="fas fa-quote-left me-2 icon"></i>{{reviews.message}}<i
+                                        class="fas fa-quote-right icon ms-2"></i>
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-top-0 text-center p-3 pt-0">
+                                <p-rating [(ngModel)]="reviews.review" [readonly]="true" [cancel]="false"></p-rating>
+                            </div>
+                        </div>
+                    </ng-template>
+                </p-carousel>
+            </div>
+        </div>
+    </div>
+</section>

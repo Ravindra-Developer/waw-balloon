@@ -1,0 +1,113 @@
+<section class="bread__crumb">
+  <div class="container h-100">
+    <div class="row h-100">
+      <div class="col-12 my-auto">
+        <h5 class="title">Home / Gallery</h5>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block gallery">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="heading">Gallery</h1>
+        <h2 class="title">Choose any decor which you like.</h2>
+        <div class="dash"><i class="fas fa-gift"></i></div>
+      </div>
+      
+      <div class="col-12">
+        <p-tabView>
+          <p-tabPanel header="Birthday">
+            <div class="birthday__tab">
+              <div class="row">
+                <!-- stars -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4"
+                  *ngFor="let stars of data.galleryData[0].stars">
+                  <div class="img__box">
+                    <img loading="lazy"[src]="stars?.imgPath" [alt]="stars?.altTxt" class="img-fluid">
+                  </div>
+                </div>
+
+                <!-- birthday -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4"
+                  *ngFor="let birthday of data.galleryData[1].birthday">
+                  <div class="img__box">
+                    <img loading="lazy"[src]="birthday?.imgPath" [alt]="birthday?.altTxt" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </p-tabPanel>
+
+          <p-tabPanel header="Baby Shower">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4"
+                *ngFor="let babyShower of data.galleryData[2].babyShower">
+                <div class="img__box">
+                  <img loading="lazy"[src]="babyShower?.imgPath" [alt]="babyShower?.altTxt" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </p-tabPanel>
+
+          <p-tabPanel header="Anniversary">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4"
+                *ngFor="let anniversary of data.galleryData[3].anniversary">
+                <div class="img__box">
+                  <img loading="lazy"[src]="anniversary?.imgPath" [alt]="anniversary?.altTxt" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </p-tabPanel>
+
+          <p-tabPanel header="Welcome Baby">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4"
+                *ngFor="let welcomeBaby of data.galleryData[4].welcomeBaby">
+                <div class="img__box">
+                  <img loading="lazy"[src]="welcomeBaby?.imgPath" [alt]="welcomeBaby?.altTxt" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </p-tabPanel>
+
+          <p-tabPanel header="Helium Balloons">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4"
+                *ngFor="let heliumBalloons of data.galleryData[5].heliumBalloons">
+                <div class="img__box">
+                  <img loading="lazy"[src]="heliumBalloons?.imgPath" [alt]="heliumBalloons?.altTxt" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </p-tabPanel>
+
+          <p-tabPanel header="Room Decor">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4"
+                *ngFor="let roomDecor of data.galleryData[6].roomDecor">
+                <div class="img__box">
+                  <img loading="lazy"[src]="roomDecor?.imgPath" [alt]="roomDecor?.altTxt" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </p-tabPanel>
+
+          <p-tabPanel header="Corporate Decoration">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"
+                *ngFor="let corporateDecoration of data.galleryData[7].corporateDecoration">
+                <div class="img__box Corporate_box">
+                  <img loading="lazy"[src]="corporateDecoration?.imgPath" [alt]="corporateDecoration?.altTxt" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </p-tabPanel> 
+        </p-tabView>
+      </div>
+    </div>
+  </div>
+</section>

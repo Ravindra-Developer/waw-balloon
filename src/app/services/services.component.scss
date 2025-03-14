@@ -1,0 +1,62 @@
+ .sm__banner {
+     background-image: url('../../assets/images/bg__party_theme.jpg');
+     background-attachment: fixed;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+
+     .heading {
+         color: #fff;
+     }
+
+     .dash {
+         margin-bottom: 1rem;
+         width: 30%;
+     }
+
+     .button {
+         color: #fff !important;
+     }
+
+     .button::before,
+     .button::after {
+         background-color: #fff;
+     }
+
+     .button:hover {
+         color: #ff5f6a !important;
+     }
+ }
+
+ .service__category {
+
+     .col-sm-6 {
+         border: 1px solid #fff;
+         cursor: pointer;
+
+         &:hover {
+             // border: 1px solid #dee2e6;
+             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+             transition: all 0.4s ease;
+         }
+     }
+
+     img {
+         // filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(70%) contrast(140%) !important;
+         filter: invert(21%) sepia(145%) saturate(1340%) hue-rotate(330deg) brightness(170%) contrast(120%);
+         height: 80px;
+         width: 80px;
+     }
+
+     p {
+         color: #858585;
+         font-size: 14px;
+         font-weight: 500;
+     }
+ }
+
+ .apart__list {
+     .dash {
+         // width: 50%;
+     }
+ }
